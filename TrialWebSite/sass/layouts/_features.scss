@@ -1,0 +1,93 @@
+.features-list {
+  padding: 60px 0px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 92px 0;
+  }
+}
+
+.list-item-antenna::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/antenna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $features-background-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.list-item-clock::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $features-background-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.list-item-diagram::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/diagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $features-background-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.list-item-astronaut::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $features-background-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.features-title-text {
+  font-weight: $description-font-weight;
+  font-size: $main-font-size;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $subtitle-color;
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}

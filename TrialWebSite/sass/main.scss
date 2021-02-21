@@ -1,0 +1,22 @@
+/*=========== utils ================*/
+@import './utils/variables';
+@import './utils/base-utils';
+@import './utils/visually-hidden';
+
+/*========== components ===========*/
+@import './components/container';
+@import './components/modal';
+@import './components/title';
+@import './components/features-title';
+@import './components/social-links';
+
+/*============ layouts =============*/
+@import './layouts/header';
+@import './layouts/nav-mobile';
+@import './layouts/nav';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/about';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';

@@ -1,0 +1,183 @@
+.footer {
+  background-color: $background-color;
+
+  & address {
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 0;
+      padding-bottom: 60px;
+      margin-right: 70px;
+      margin-bottom: 0;
+      text-align: initial;
+    }
+  }
+
+  &-address {
+    font-weight: $description-font-weight;
+    font-size: $main-font-size;
+    line-height: 1.174;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    &-list {
+      margin-top: 20px;
+    }
+  }
+
+  &-links {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 65px;
+      padding-right: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 72px;
+      padding-right: 0;
+      margin-right: 93px;
+      align-items: initial;
+    }
+  }
+
+  &-sign {
+    text-align: center;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      width: 572px;
+      margin: 0;
+      padding-top: 72px;
+      align-items: initial;
+      text-align: initial;
+    }
+  }
+}
+
+.logo-white {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: $title-font-weight;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: $white-dark-theme;
+}
+
+.address-place {
+  font-weight: $description-font-weight;
+  font-size: $main-font-size;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $white-dark-theme;
+}
+
+.address-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-form {
+  margin-top: 20px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
+  &-input {
+    width: 100%;
+    height: 48px;
+    background-color: $background-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+
+    &::placeholder {
+      font-family: $main-font;
+      font-size: 16px;
+      font-weight: $description-font-weight;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:not(:placeholder-shown) {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.footer-btn {
+  height: 50px;
+  min-width: 200px;
+  border-radius: 4px;
+  color: $white-dark-theme;
+  background-color: $accent-color;
+  border-color: $accent-color;
+  outline: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  &-text {
+    font-family: $main-font;
+    font-weight: $title-font-weight;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+  }
+
+  &-svg {
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}

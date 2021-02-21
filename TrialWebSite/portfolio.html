@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+
+<!--HEADER-->
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo link" href="./index.html" lang="en"><span class="logo-blue">Web</span>Studio</a>
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
+            <svg width="40" height="40" aria-label="переключатель мобильного меню">
+              <use class="icon-menu-close nav-svg" href="./images/modal-icons.svg#icon-menu-close"></use>
+              <use class="icon-burger nav-svg" href="./images/modal-icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="nav-menu" id="nav-menu" data-menu>
+            <ul class="navigation-list list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="active navigation-list-link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="">Контакты</a>
+              </li>
+            </ul>
+            <address class="header-address">
+              <a class="header-contacts link" href="mailto:info@devstudio.com">
+                <svg class="icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>info@devstudio.com
+              </a>
+              <a class="header-contacts tel link" href="tel:+380991111111">
+                <svg class="icon" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>+38 099 111 11 11
+              </a>
+            </address>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+
+      <!--PROJECTS FILTERS-->
+      <section class="filters">
+        <div class="container">
+          <h1 hidden lang="en">Filters</h1>
+          <ul class="menu list">
+            <li class="filters-list">
+              <a class="filters-list-link link" href="">Все</a>
+            </li>
+            <li class="filters-list">
+              <a class="filters-list-link link" href="">Веб-сайты</a>
+            </li>
+            <li class="filters-list">
+              <a class="filters-list-link link" href="">Приложения</a>
+            </li>
+            <li class="filters-list">
+              <a class="filters-list-link link" href="">Дизайн</a>
+            </li>
+            <li class="filters-list">
+              <a class="filters-list-link link" href="">Маркетинг</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--OUR PROJECTS-->
+      <section class="projects">
+        <div class="container">
+          <h2 hidden lang="en">Projects</h2>
+          <ul class="projects-list list">
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_1_desktop.jpg 1x, ./images/prj_1_desktop_@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                      <source srcset="./images/prj_1_tablet.jpg 1x, ./images/prj_1_tablet_@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                      <source srcset="./images/prj_1.jpg 1x, ./images/prj_1_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_1.jpg" alt="Технокряк" style="max-width: 100%;" />
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title">Технокряк</h3>
+                    <p class="projects-subtitle">Веб-сайт</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_2_desktop.jpg 1x, ./images/prj_2_desktop_@2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./images/prj_2_tablet.jpg 1x, ./images/prj_2_tablet_@2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./images/prj_2.jpg 1x, ./images/prj_2_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_2.jpg" alt="New Orlean vs Golden Star" style="max-width: 100%;" />
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        New Orlean vs Golden Star
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title">
+                      Постер<span lang="en">New Orlean vs Golden Star</span>
+                    </h3>
+                    <p class="projects-subtitle">Дизайн</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_3_desktop.jpg 1x, ./images/prj_3_desktop_@2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./images/prj_3_tablet.jpg 1x, ./images/prj_3_tablet_@2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./images/prj_3.jpg 1x, ./images/prj_3_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_3.jpg" alt="Seafood Restaurant logo" style="max-width: 100%;" />
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        Seafood
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title">
+                      Ресторан<span lang="en">Seafood</span>
+                    </h3>
+                    <p class="projects-subtitle">Приложение</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_4_desktop.jpg 1x, ./images/prj_4_desktop_@2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./images/prj_4_tablet.jpg 1x, ./images/prj_4_tablet_@2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./images/prj_4.jpg 1x, ./images/prj_4_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_4.jpg" alt="Prime Project" style="max-width: 100%;" />
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        Prime Project
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title">
+                      Проект <span lang="en">Prime</span>
+                    </h3>
+                    <p class="projects-subtitle">Маркетинг</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_5_desktop.jpg 1x, ./images/prj_5_desktop_@2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./images/prj_5_tablet.jpg 1x, ./images/prj_5_tablet_@2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./images/prj_5.jpg 1x, ./images/prj_5_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_5.jpg" alt="Boxes Project" style="max-width: 100%;" />
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        Boxes Project
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title">
+                      Проект <span lang="en">Boxes</span>
+                    </h3>
+                    <p class="projects-subtitle">Приложение</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_6_desktop.jpg 1x, ./images/prj_6_desktop_@2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./images/prj_6_tablet.jpg 1x, ./images/prj_6_tablet_@2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./images/prj_6.jpg 1x, ./images/prj_6_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_6.jpg" alt="Inspiration has no Borders" style="max-width: 100%;" />
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        Inspiration has no Borders
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title" lang="en">
+                      Inspiration has no Borders
+                    </h3>
+                    <p class="projects-subtitle">Веб-сайт</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_7_desktop.jpg 1x, ./images/prj_7_desktop_@2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./images/prj_7_tablet.jpg 1x, ./images/prj_7_tablet_@2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./images/prj_7.jpg 1x, ./images/prj_7_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_7.jpg" alt="Limited Edition" style="max-width: 100%;" />
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        Limited Edition
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title">
+                      Издание <span lang="en">Limited Edition</span>
+                    </h3>
+                    <p class="projects-subtitle">Дизайн</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_8_desktop.jpg 1x, ./images/prj_8_desktop_@2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./images/prj_8_tablet.jpg 1x, ./images/prj_8_tablet_@2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./images/prj_8.jpg 1x, ./images/prj_8_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_8.jpg" alt="LAB Project" style="max-width: 100%;" />
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        LAB Project
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title">
+                      Проект <span lang="en">LAB</span>
+                    </h3>
+                    <p class="projects-subtitle">Маркетинг</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="">
+                <figure class="projects-list-item">
+                  <div class="projects-list-img">
+                    <picture>
+                      <source srcset="./images/prj_9_desktop.jpg 1x, ./images/prj_9_desktop_@2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./images/prj_9_tablet.jpg 1x, ./images/prj_9_tablet_@2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./images/prj_9.jpg 1x, ./images/prj_9_@2x.jpg 2x" media="(min-width: 320px)">
+                      <img src="./images/prj_9.jpg" alt="Growing Business Project" style="max-width: 100%;"/>
+                    </picture>
+                    <div class="overlay">
+                      <p class="overlay-title">
+                        Growing Business Project
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3 class="projects-title" lang="en">Growing Business</h3>
+                    <p class="projects-subtitle">Приложение</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <address>
+          <a class="logo-white link"><span class="logo-blue">Web</span>Studio</a>
+          <ul class="footer-address-list list">
+            <li class="address-list">
+              <a class="address-place link contacts" href="https://goo.gl/maps/TSVSEkDb8neDYi4k9" target="blank">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li class="address-list">
+              <a class="footer-address link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="address-list">
+              <a class="footer-address link contacts" href="tel:+380961111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+        <div class="footer-links">
+          <b class="features-title">присоединяйтесь</b>
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg class="social-list-svg">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg class="social-list-svg">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg class="social-list-svg">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg class="social-list-svg">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-sign">
+          <b class="features-title">подпишитесь на рассылку</b>
+          <form class="footer-form">
+            <label>
+              <input class="footer-form-input" type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <button class="footer-btn" type="submit">Подписаться
+              <svg class="footer-btn-svg">
+                <use href="./images/modal-icons.svg#icon-email-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

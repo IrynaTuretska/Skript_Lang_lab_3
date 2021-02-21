@@ -1,0 +1,36 @@
+.about {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 92px;
+
+  &-item {
+    position: relative;
+    max-width: 370px;
+  }
+
+  &-subtitle {
+    font-weight: $title-font-weight;
+    font-size: $main-font-size;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-dark-theme;
+  }
+
+  &-div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

@@ -1,0 +1,37 @@
+.container {
+  min-width: 320px;
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin: 0 auto;
+
+    .hero & {
+      width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    .footer & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .footer & {
+      flex-wrap: nowrap;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.features-title {
+  text-align: center;
+  font-weight: $title-font-weight;
+  font-size: $main-font-size;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-color;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+
+  .footer & {
+    color: $white-dark-theme;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+}

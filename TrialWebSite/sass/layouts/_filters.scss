@@ -1,0 +1,72 @@
+.menu {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 64px 30px 64px;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 280px 50px;
+  }
+}
+
+.filters-list {
+  background-color: $features-background-color;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: background-color $timing-function,
+    color $timing-function;
+  margin-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+
+  &:not(:nth-last-child(-n + 1)) {
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 405px) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 406px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $white-dark-theme:;
+  }
+
+  &-link {
+    font-weight: $subtitle-font-weight;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+
+    .filters-list:hover & {
+      color: $white-dark-theme;
+    }
+  }
+}
