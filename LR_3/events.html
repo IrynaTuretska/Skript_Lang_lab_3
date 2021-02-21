@@ -1,87 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <style>
-        #myDIV {
-            margin: 25px;
-            width: 550px;
-            height: 100px;
-            background: orange;
-            position: relative;
-            font-size: 20px;
-        }
-    
-        /* Chrome, Safari, Opera */
-        @-webkit-keyframes mymove {
-            from {
-                top: 0px;
-            }
-    
-            to {
-                top: 200px;
-            }
-        }
-    
-        @keyframes mymove {
-            from {
-                top: 0px;
-            }
-    
-            to {
-                top: 200px;
-            }
-        }
-    </style>
-    </head>
-</head>
+<head></head>
 
 <body>
 
-    <p>This example uses the addEventListener() method to attach an "animationstart", "animationiteration" and
-        "animationend" event to a DIV element.</p>
+    <p>НАТИСНІТЬ КНОПКУ ЩОБ ЗМІНИТИ ЇЇ КОЛІР.</p>
 
-    <div id="myDIV" onclick="myFunction()">Click me to start the animation.</div>
+<button id="myBtn">НАТИСНУТИ!</button>
 
-    <script>
-        var x = document.getElementById("myDIV");
+<script>
+    document.getElementById("myBtn").addEventListener("click", function () {
+        this.style.backgroundColor = "green";
+    });
+</script>
 
-        // Start the animation with JavaScript
-        function myFunction() {
-            x.style.WebkitAnimation = "mymove 4s 2"; // Code for Chrome, Safari and Opera
-            x.style.animation = "mymove 4s 2";     // Standard syntax
-        }
+<p></p>
 
-        // Code for Chrome, Safari and Opera
-        x.addEventListener("webkitAnimationStart", myStartFunction);
-        x.addEventListener("webkitAnimationIteration", myRepeatFunction);
-        x.addEventListener("webkitAnimationEnd", myEndFunction);
+ВВЕДІТЬ ІМ'Я: <input type="text" id="fname" onblur="myFunction()">
 
-        // Standard syntax
-        x.addEventListener("animationstart", myStartFunction);
-        x.addEventListener("animationiteration", myRepeatFunction);
-        x.addEventListener("animationend", myEndFunction);
-
-        function myStartFunction() {
-            this.innerHTML = "animationstart event occured - The animation has started";
-            this.style.backgroundColor = "pink";
-        }
-
-        function myRepeatFunction() {
-            this.innerHTML = "animationiteration event occured - The animation was played again";
-            this.style.backgroundColor = "lightblue";
-        }
-
-        function myEndFunction() {
-            this.innerHTML = "animationend event occured - The animation has completed";
-            this.style.backgroundColor = "lightgray";
-        }
-    </script>
-
-
-Enter your name: <input type="text" id="fname" onblur="myFunction()">
-
-<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+<p></p>
 
 <script>
     function myFunction() {
@@ -90,8 +28,8 @@ Enter your name: <input type="text" id="fname" onblur="myFunction()">
     }
 </script>
 
-<div id="counter">o</div>
-<button id="reset">reset</button>
+<div id="counter">0</div>
+<button id="reset">почати знову</button>
 <script>
    var count = 0
 

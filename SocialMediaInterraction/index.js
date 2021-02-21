@@ -1,11 +1,10 @@
 const get = id => document.getElementById(id);
 
-const MAX_CHARS = 140;
+const MAX_CHARS = 250;
 let text = get('string');
 let btn = get('btn');
 let counter = get('counterFooter');
 
-// initialise disable tweet if length is 0
 let tweet = text.value;
 if(tweet.length == 0) {
     btn.classList.add('buttonDisabled');
@@ -19,7 +18,6 @@ text.addEventListener('keyup', () => {
     let charLength = text.value.length;
     let charRemaining = MAX_CHARS - charLength;
 
-    // update remaing characters to user
     counter.innerText = `${charRemaining} / ${MAX_CHARS}`;    
 
     if(charLength == 0) {
@@ -55,7 +53,6 @@ text.addEventListener('keyup', () => {
 btn.addEventListener('click', function() {
     let tweet = text.value;
 
-    // send tweet if value less or equal to MAX_CHARS 
     if(tweet.length > 0 && tweet.length <= MAX_CHARS) {
         let postTweet = `https://twitter.com/intent/tweet?text=${tweet}`;
         window.open(postTweet, '_blank');
